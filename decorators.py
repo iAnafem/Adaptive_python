@@ -73,3 +73,15 @@ def fibonacci(num):
 
 print(fibonacci(20))
 print(fibonacci(8))
+
+
+@singleton
+class lol:
+    def __init__(self, kyky):
+        self.kyky = kyky
+
+
+c = lol(300)
+a = lol(500)
+
+print(id(c), id(a), c.kyky, a.kyky)
